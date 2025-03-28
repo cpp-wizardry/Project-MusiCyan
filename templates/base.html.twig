@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mon Site{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+
+</head>
+
+<body>
+{% include 'partials/_header.html.twig' %}
+
+<main>
+    {% block body %}{% endblock %}
+</main>
+</body>
+</html>
